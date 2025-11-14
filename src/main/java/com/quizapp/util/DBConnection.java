@@ -19,8 +19,8 @@ public class DBConnection {
 	/** MySQL database username */
 	private static final String USER = "root";
 
-	/** MySQL database password (replace with your actual password) */
-	private static final String PASSWORD = "your_password";
+	/** MySQL database password */
+	private static final String PASSWORD = "Sumair@1";
 
 	/** Reusable single Connection instance */
 	private static Connection connection = null;
