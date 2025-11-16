@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="js/signup.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h1>Create Account</h1>
+            <p class="subtitle">Join us today!</p>
+
+            <form id="signupForm" action="signup" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="passwordError"></span>
+
+                    <div class="password-requirements">
+                        <p class="req-title">Password must contain:</p>
+                        <ul id="passwordChecklist">
+                            <li id="req-length" class="invalid">
+                                <span class="icon">✗</span> At least 6 characters
+                            </li>
+                            <li id="req-upper" class="invalid">
+                                <span class="icon">✗</span> One uppercase letter
+                            </li>
+                            <li id="req-lower" class="invalid">
+                                <span class="icon">✗</span> One lowercase letter
+                            </li>
+                            <li id="req-number" class="invalid">
+                                <span class="icon">✗</span> One number
+                            </li>
+                            <li id="req-special" class="invalid">
+                                <span class="icon">✗</span> One special character (!@#$%^&*)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+
+            <p class="login-link">
+                Already have an account? <a href="login.html">Log In</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
