@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fb; /* clean modern background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Make container smaller */
+.container {
+    width: 100%;
+    max-width: 380px; /* reduced width */
+}
+
+.signup-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px; /* reduced padding */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.signup-box:hover {
+    transform: translateY(-3px);
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 6px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #777;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/* Reduce space */
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px; /* smaller input box */
+    border: 1.8px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
+}
+
+/* Tighten the password checklist */
+.password-requirements {
+    background: #fdfdfd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 8px;
+    border: 1px solid #eee;
+}
+
+.req-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+#passwordChecklist li {
+    font-size: 12px;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+#passwordChecklist li .icon {
+    margin-right: 6px;
+    min-width: 16px;
+}
+
+#passwordChecklist li.invalid { color: #e74c3c; }
+#passwordChecklist li.valid { color: #27ae60; }
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff; /* modern purple */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(108, 99, 255, 0.3);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 14px;
+    color: #666;
+    font-size: 13px;
+}
+
+.login-link a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: 600;
+}
